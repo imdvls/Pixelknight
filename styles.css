@@ -1,0 +1,209 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c2c54;
+    font-family: 'Press Start 2P', cursive, Arial, sans-serif;
+    color: #f7f1e3;
+    line-height: 1.6;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMC0wNC0yNlQxNDozNzowNiswMTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjAtMDQtMjZUMTQ6Mzc6NDErMDE6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjAtMDQtMjZUMTQ6Mzc6NDErMDE6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6YzI0MGRmNzQtY2FmMy00MjQxLWFiYTYtYWQ5MjdmM2VlNzczIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOmMyNDBkZjc0LWNhZjMtNDI0MS1hYmE2LWFkOTI3ZjNlZTc3MyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmMyNDBkZjc0LWNhZjMtNDI0MS1hYmE2LWFkOTI3ZjNlZTc3MyI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YzI0MGRmNzQtY2FmMy00MjQxLWFiYTYtYWQ5MjdmM2VlNzczIiBzdEV2dDp3aGVuPSIyMDIwLTA0LTI2VDE0OjM3OjA2KzAxOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrrP240AAAXUSURBVGiBzdpdiF1XFQfw3zr33sw0M2kySWZMJvEjCY1JbBMSMWpTkRRBsC8K2hd9qwgiFn3Qp/pQ8cUXQRCLKL5IlaJgQWqxpbGtaT5oTGMa05jUfE4mb2Yy957v43j3PvvxnJl7x2ZK/XCYc89ee6/1X2vttdba5zJ3KS4u7qFaZXycapXt7WrVnFnEIU7wAk9yj7EpAKyv8+qrnDjBhQs8+CDnzp14BkpKsSLu4j5+w+/4PfOsIyBrtZrVKktL3H8/Z8/y2GOUfY76/4tK8Ry/4Uf8iZE2wqqMjLC2ZnLyDrQrZM7YZJ3H+QlPM9+GWJUbb1S5dMnEhB1oV8g8Y4cZ/smPeYbVDoSqXL/O9jbD7XVbfFc6xK/5Oo+wfpVQVba3WVqq0Oo1Oxx6gL8yPLxrpKrVarUmQ0OUSgZWq9Vqv8VH+Rd9FQYGGgP79rG+PnR48+aDh7a2bmR2ltnZa2lmZL7Pj+W1qe/iZgOvvNL/2P79n96/vn6LGTM/4/t8kXf4G4/wL/oKTE+z7z7OnDm1f2Pj1t7e3tuZMfMdvqis3EB/P5XKxXL//v2Vra1Jc3NzKysr1Wr1d3yafzIi9PZ2XqbM2LFMWV4+Wt7amlxcWnr4lZMnP7S8vDyzuLi4srKysrm5+Q9h5RHCyiYzMxwrNzKyuDg2tri4uPjRkyef2tzc3Nza2lpZXV29tLy8vDo/P7+4sLBwSbhWt5WXl89tbm5+4vjx4+8rUJJX3rlzHxgYGBgeHh7p6+sbGhwc7O3p6emr1Wr9lUqlr1Qq9RV4L7fwYSGmxwuUSuPl/v6jAwMDk319fYODg4OjIyMjY6Ojo8Ojo6MjIyMjPb29vT0FBnjSzKmTJ6vHjh3L3s3oNvJOHuILfJu3C9F9Vj3Pb3mC5wuEhEWQsZWVCk8/zZNPcv48Dx3qHKkaK1RQZpVf8TibNGUmm+JZfsC7XBQs0VSUhNVVrl7l4kVmZzkz03mmJAyGnuUZnuMKs2ZqbBdYYZUKF42MsLLCxYusrDAz03mmJJwGz/Isp8xkBTbYYLvANtsMscjyMsvLLC/z7rtXJ1XmJvaxwQpXuGymxjprrLHJltA5RRaZm2N+nvl5Ll++thAyN3GQFZaZNZOxwQabbAk5LrDFJtsMscT8PPPzXLp0bRbK3MIhllgyk7FWYLMpVmCdNdYLrLPOOmuss8EGm2yxxdZVvNSQmVs5zCKLZjI2CmwV2CqwVaBcYLvAToGdAuUC5QLlAuWdTjJzO0dYYN5MgXKBcoFygXKBnQI7BXYKVApUClQKVApUClQKVHY6yczd3Mg8c2YyKgUqBSoFKgWqBaoFqgVqBWoFagVqBWoFagVqO51k5l5uZpZZMxm1ArUCtQK1ArUC9QL1AvUC9QL1AvUC9QL1AvWdTjJzP7cxw4yZjHqBeoF6gXqBRoFGgUaBZoFmgWaBZoFmgWaBZqOTzLyP25lm2kxGo0CjQKNAo0CzQLNAs0CrQKtAq0CrQKtAq0Cr1Uhm7uAeTjNtJqNVoFWgVaBVoF2gXaBdoFOgU6BToFOgU6BToNNqJDPv5y5OMWUmo12gXaBdoF2gU6BToFOgW6BboFugW6BboFugW6BbbyQzH+A+TnLSTEa3QLdAt0C3QK9Ar0CvQF+BvgJ9BfoK9BXoK9CvNZKZD/JBTnDCTEZfgb4CfQX6CgwUGCgwUGCwwGCBwQKDBQYLDBYYrDWSmQ/xIU5w3EzGYIHBAoMFBgsMFRgqMFRguMBwgeECwwWGCwwXGK41kpkP8xFe4piZjOECwwWGCwwXGCkwUmCkwGiB0QKjBUYLjBYYLTBabyQzH+XjvMhRMxmjBUYLjBYYLTBWYKzAWIHxAuMFxguMFxgvMF5gvNZIZj7GJ3ieI2YyxguMFxgvMF5gosAEEwUmC0wWmCwwWWCywGSBqVojmfkEn+I5DpvJmCwwWWCywGSB/wL0pq+mniCmxwAAAABJRU5ErkJggg==');
+    background-repeat: repeat;
+}
+
+.game-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 4px solid #706fd3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ff9f43;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #ff9f43;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0 #000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.game-container {
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid #706fd3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    display: block;
+    background-color: #000;
+    border: 2px solid #444;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 640px;
+    height: 480px;
+    max-width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+#game-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 640px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.stat {
+    font-size: 14px;
+    color: #f7f1e3;
+}
+
+.game-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.controls-section {
+    flex: 1;
+    min-width: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    border: 4px solid #706fd3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.key {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: #f7f1e3;
+    padding: 5px 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 2px solid #f7f1e3;
+    min-width: 60px;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 0 3px 0 #1a252f;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #f7f1e3;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Multiplayer styles */
+#connection-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#connection-status.connected {
+    background-color: rgba(46, 204, 113, 0.7);
+    color: #fff;
+    border: 2px solid #27ae60;
+}
+
+#connection-status.disconnected {
+    background-color: rgba(231, 76, 60, 0.7);
+    color: #fff;
+    border: 2px solid #c0392b;
+}
+
+#connection-status.connecting {
+    background-color: rgba(241, 196, 15, 0.7);
+    color: #fff;
+    border: 2px solid #f39c12;
+}
+
+.player-tag {
+    position: absolute;
+    font-size: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    .game-wrapper {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+    
+    .game-controls {
+        flex-direction: column;
+    }
+    
+    .controls-section {
+        min-width: auto;
+    }
+} 

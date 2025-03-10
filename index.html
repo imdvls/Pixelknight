@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Knight Adventure - Multiplayer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-wrapper">
+        <header>
+            <h1>Pixel Knight Adventure</h1>
+            <div id="connection-status" class="disconnected">Disconnected</div>
+        </header>
+        
+        <main>
+            <div class="game-container">
+                <canvas id="gameCanvas" width="320" height="240"></canvas>
+                <div id="game-stats">
+                    <div class="stat">Score: <span id="score-display">0</span></div>
+                    <div class="stat">Lives: <span id="lives-display">3</span></div>
+                    <div class="stat">Players: <span id="players-count">1</span></div>
+                </div>
+            </div>
+            
+            <div class="game-controls">
+                <div class="controls-section">
+                    <h2>Controls</h2>
+                    <ul>
+                        <li><span class="key">←</span> Move Left</li>
+                        <li><span class="key">→</span> Move Right</li>
+                        <li><span class="key">Space</span> Jump</li>
+                        <li><span class="key">X/Z/Ctrl</span> Attack</li>
+                        <li><span class="key">R</span> Restart Game</li>
+                    </ul>
+                </div>
+                
+                <div class="controls-section">
+                    <h2>Multiplayer</h2>
+                    <ul>
+                        <li>Play with friends in real-time</li>
+                        <li>See other players in the game world</li>
+                        <li>Compete for the highest score</li>
+                        <li>Collaborate to defeat enemies</li>
+                    </ul>
+                </div>
+                
+                <div class="controls-section">
+                    <h2>Objectives</h2>
+                    <ul>
+                        <li>Collect coins for points</li>
+                        <li>Jump on enemies to defeat them</li>
+                        <li>Avoid falling into holes</li>
+                        <li>Survive as long as possible</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Created with ❤️ using JavaScript and HTML5 Canvas</p>
+            <p>Multiplayer mode enabled</p>
+        </footer>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html> 

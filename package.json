@@ -1,0 +1,15 @@
+{
+  "name": "pixelknight",
+  "version": "1.0.0",
+  "main": "servercode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node servercode.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ws": "^8.18.1"
+  }
+}
