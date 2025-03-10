@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelknight - Multiplayer Platformer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .btn-secondary {
+            background-color: #2196F3;
+        }
+        .btn-secondary:hover {
+            background-color: #0b7dda;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .feature h3 {
+            margin-top: 0;
+        }
+        .note {
+            background-color: #fffde7;
+            border-left: 4px solid #ffd600;
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pixelknight</h1>
+        <p style="text-align: center;">A multiplayer 2D platformer game with pixel art graphics, built with JavaScript and WebSockets.</p>
+        
+        <div class="buttons">
+            <a href="server-config.html" class="btn">Play Game</a>
+            <a href="https://github.com/imdvls/Pixelknight" class="btn btn-secondary">View on GitHub</a>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>Multiplayer</h3>
+                <p>Play with friends in real-time over WebSockets</p>
+            </div>
+            <div class="feature">
+                <h3>Pixel Art</h3>
+                <p>Beautiful retro-style pixel art graphics</p>
+            </div>
+            <div class="feature">
+                <h3>Combat</h3>
+                <p>Fight enemies with your sword</p>
+            </div>
+            <div class="feature">
+                <h3>Platforming</h3>
+                <p>Jump between platforms and collect coins</p>
+            </div>
+        </div>
+        
+        <div class="note">
+            <h3>How to Play:</h3>
+            <p>To play Pixelknight, you need to connect to a running server. You can:</p>
+            <ol>
+                <li>Run your own server locally (see GitHub for instructions)</li>
+                <li>Connect to someone else's server if they provide you with the address</li>
+            </ol>
+            <p>Click "Play Game" to configure your server connection.</p>
+        </div>
+    </div>
+</body>
+</html> 

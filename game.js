@@ -8,7 +8,12 @@ const MAP_WIDTH = 1000;
 const MAP_HEIGHT = 240;
 
 // Multiplayer settings
-const WS_SERVER_URL = 'ws://localhost:8080'; // Local server address
+// Allow server URL to be configured via URL parameter, default to localhost
+const urlParams = new URLSearchParams(window.location.search);
+const serverParam = urlParams.get('server');
+const WS_SERVER_URL = serverParam ? `ws://${serverParam}` : 'ws://localhost:8080';
+console.log(`Connecting to WebSocket server at: ${WS_SERVER_URL}`);
+
 let socket = null;
 let playerId = null;
 let otherPlayers = {}; // Store other players' data
