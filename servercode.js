@@ -1,8 +1,22 @@
 const WebSocket = require('ws');
 const server = new WebSocket.Server({ 
   port: 8080,
-  perMessageDeflate: false // Disable compression which might cause issues
+  perMessageDeflate: false, // Disable compression which might cause issues
+  // Add CORS headers for the WebSocket handshake
+  verifyClient: (info) => {
+    // Log connection attempts
+    console.log(`Connection attempt from origin: ${info.origin || 'Unknown'}`);
+    console.log(`Connection headers:`, info.req.headers);
+    
+    // Allow connections from any origin
+    return true;
+  }
 });
+
+// Log when server starts
+console.log(`WebSocket server started on port 8080`);
+console.log(`Local access: ws://localhost:8080`);
+console.log(`Network access: Find your IP address using 'ifconfig' or 'ipconfig'`);
 
 // Game constants
 const TILE_SIZE = 16; // Each tile is 16x16 pixels
@@ -1229,6 +1243,3 @@ function handleSwordAttack(data) {
     }
   });
 }
-
-// Start the server
-console.log('WebSocket server started on port 8080');

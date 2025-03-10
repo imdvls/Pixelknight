@@ -11,7 +11,11 @@ const MAP_HEIGHT = 240;
 // Allow server URL to be configured via URL parameter, default to localhost
 const urlParams = new URLSearchParams(window.location.search);
 const serverParam = urlParams.get('server');
-const WS_SERVER_URL = serverParam ? `ws://${serverParam}` : 'ws://localhost:8080';
+
+// Use wss:// protocol if the page is loaded over https://, otherwise use ws://
+const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
+const WS_SERVER_URL = serverParam ? `${protocol}://${serverParam}` : `${protocol}://localhost:8080`;
+
 console.log(`Connecting to WebSocket server at: ${WS_SERVER_URL}`);
 
 let socket = null;
