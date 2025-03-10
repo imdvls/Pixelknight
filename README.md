@@ -22,7 +22,7 @@ A multiplayer 2D platformer game with pixel art graphics, built with JavaScript 
 
 1. Clone the repository
 ```
-git clone <repository-url>
+git clone https://github.com/imdvls/Pixelknight.git
 cd pixelknight
 ```
 
@@ -72,4 +72,4 @@ The game consists of two main components:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
